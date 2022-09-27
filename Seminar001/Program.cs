@@ -5,7 +5,7 @@
 // int a = 5;
 // int b = 7;
 
-// if (a > b )
+// if ( a > b )
 // {
 //     Console.Write("max = ");
 //     Console.Write(a);
@@ -59,7 +59,7 @@
 // Console.WriteLine("Введите число: ");
 // int N = Convert.ToInt32(Console.ReadLine());
 
-// for (int i = 0; i <= N; i = i+2)
+// for (int i = 2; i <= N; i = i+2)
 // {
 //     Console.WriteLine(i);
 // }
