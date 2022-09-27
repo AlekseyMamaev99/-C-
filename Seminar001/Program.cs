@@ -1,6 +1,6 @@
 ﻿// Домашняя работа по семинару №1.
 
-// Задача 2
+//                                                                       Задача 2
 
 // int a = 5;
 // int b = 7;
@@ -17,25 +17,39 @@
 // }
 
 
-// Задача 4
+//                                                                       Задача 4
 
-int a = 44;
-int b = 5;
-int c = 78;
+// int a = 44;
+// int b = 5;
+// int c = 78;
 
-int max = a;
+// int max = a;
 
-if (b > a && b > c)
+// if (b > a && b > c)
+// {
+//      max = b;
+// }
+// else if (c > a && c > b)
+// {
+//      max = c;
+// }
+// else
+// {
+//      max = a;
+// }
+
+// Console.WriteLine(max);
+
+//                                                                       Задача 6
+
+Console.WriteLine("Введите число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+
+if (a % 2 == 0)
 {
-     max = b;
-}
-else if (c > a && c > b)
-{
-     max = c;
+    Console.WriteLine("Да, число четное!");
 }
 else
 {
-     max = a;
+    Console.WriteLine("Нет, число НЕ четное!");
 }
-
-Console.WriteLine(max);
