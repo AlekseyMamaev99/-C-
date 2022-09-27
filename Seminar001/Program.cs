@@ -42,14 +42,24 @@
 
 //                                                                       Задача 6
 
-Console.WriteLine("Введите число: ");
-int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
 
-if (a % 2 == 0)
+// if (a % 2 == 0)
+// {
+//     Console.WriteLine("Да, число четное!");
+// }
+// else
+// {
+//     Console.WriteLine("Нет, число НЕ четное!");
+// }
+
+//                                                                       Задача 8
+
+Console.WriteLine("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+
+for (int i = 0; i <= N; i = i+2)
 {
-    Console.WriteLine("Да, число четное!");
-}
-else
-{
-    Console.WriteLine("Нет, число НЕ четное!");
+    Console.WriteLine(i);
 }
