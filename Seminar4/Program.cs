@@ -16,17 +16,17 @@
 
 //                                                                      Задача 27
 
-Console.WriteLine("Введите число: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int sum = 0;
-string m = Convert.ToString(n);
+// Console.WriteLine("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int sum = 0;
+// string m = Convert.ToString(n);
 
-for (int i = 0; i < m.Length; i++)
-{
-    int x = Convert.ToInt32(Convert.ToString(m[i]));
-    sum =sum + x;
-}
-Console.WriteLine(sum);
+// for (int i = 0; i < m.Length; i++)
+// {
+//     int x = Convert.ToInt32(Convert.ToString(m[i]));
+//     sum =sum + x;
+// }
+// Console.WriteLine(sum);
 
 
 //                                                                      Задача 29
