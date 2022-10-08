@@ -39,32 +39,32 @@
 
 
 
-Console.Clear();
+// Console.Clear();
 
-Console.WriteLine("Введите переменную b1 :");
-double b1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите переменную k1 :");
-double k1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите переменную b1 :");
+// double b1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите переменную k1 :");
+// double k1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите переменную b2 :");
-double b2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите переменную k2 :");
-double k2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите переменную b2 :");
+// double b2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите переменную k2 :");
+// double k2 = Convert.ToInt32(Console.ReadLine());
 
 
-if (k1 != k2)
-{   
-    double x = (b2 - b1) / (k1 - k2);
-    double y = k1 * x + b1;
-    Console.WriteLine($"Координаты точки пересечения: ({x};{y})");
-}
-else if (k1 == k2 && b1 == b2)
-{
-    Console.WriteLine("Это одна и та же прямая!");
-}
-else if (k1 == k2)
-{
-    Console.WriteLine("Эти прямые паралелльны!");
-}
+// if (k1 != k2)
+// {   
+//     double x = (b2 - b1) / (k1 - k2);
+//     double y = k1 * x + b1;
+//     Console.WriteLine($"Координаты точки пересечения: ({x};{y})");
+// }
+// else if (k1 == k2 && b1 == b2)
+// {
+//     Console.WriteLine("Это одна и та же прямая!");
+// }
+// else if (k1 == k2)
+// {
+//     Console.WriteLine("Эти прямые паралелльны!");
+// }
 
 
