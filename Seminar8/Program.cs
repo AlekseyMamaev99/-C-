@@ -3,29 +3,29 @@
 //                                                                      Задача 54
 
 
-Console.Clear();
+// Console.Clear();
 
-void InputMatrix(int[,] matrix)
-{
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            matrix[i,j] = new Random().Next(1,11);
-            Console.Write(matrix[i,j] + "\t");
-        }
-        Console.WriteLine();
-    }
-}
+// void InputMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             matrix[i,j] = new Random().Next(1,11);
+//             Console.Write(matrix[i,j] + "\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
     
-Console.WriteLine("Введите количество строк : ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите количество столбцов : ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine();
+// Console.WriteLine("Введите количество строк : ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите количество столбцов : ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine();
 
-int[,] matrix = new int[n,m];
-InputMatrix(matrix);
+// int[,] matrix = new int[n,m];
+// InputMatrix(matrix);
 
 // void fromMaxToMin(int[,] matrix)
 // {
@@ -119,29 +119,50 @@ InputMatrix(matrix);
 //                                                                      Задача 58
 
 
-int[,] otMaxKMin(int[,] matrix)
-{
-    int[,] array = new int[matrix.GetLength(0),matrix.GetLength(1)];
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            int[] miniArr = new int[matrix.GetLength(1)];
-            miniArr[j] = matrix[i,j];
-            for (int k = 0; k < miniArr.Length - 1 ; k++)
-            {
-                if (miniArr[j] < miniArr[j + 1])
-                {
-                    int temp = miniArr[j];
-                    miniArr[j] = miniArr[j + 1];
-                    miniArr[j + 1] = temp;
-                }
-                
-            }
-            array[i,j] = miniArr[j];
-        }
-    }
-    return array;
-}
-otMaxKMin(matrix);
-Console.Write(otMaxKMin(matrix));
+
+// Console.Clear();
+
+// void InputMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             matrix[i,j] = new Random().Next(1,11);
+//             Console.Write(matrix[i,j] + "\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+    
+
+// void ProizvedenieMatrix(int[,] matrixOne, int[,] matrixTwo)
+// {
+//     int[,] resultMatrix = new int[matrixOne.GetLength(0), matrixOne.GetLength(1)];
+
+//     for (int i = 0; i < matrixOne.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrixOne.GetLength(1); j++)
+//         {
+//             resultMatrix[i,j] = matrixOne[i,j] * matrixTwo[i,j];
+//             Console.Write(resultMatrix[i,j] + " ");
+//         }
+//     Console.WriteLine();
+//     } 
+// }
+
+// Console.WriteLine("Введите количество строк : ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите количество столбцов : ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine();
+
+// int[,] matrixOne = new int[n,m];
+// int[,] matrixTwo = new int[n,m];
+
+// Console.WriteLine("Начальная матрица 1: ");
+// InputMatrix(matrixOne);
+// Console.WriteLine("Начальная матрица 2: ");
+// InputMatrix(matrixTwo);
+// Console.WriteLine("Произведение матриц : ");
+// ProizvedenieMatrix(matrixOne, matrixTwo);
